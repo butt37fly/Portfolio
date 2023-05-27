@@ -84,5 +84,4 @@
   grid-template-columns: 9fr 1fr;
   grid-template-rows: 10fr 1fr;
   overflow: hidden;
-  background-color: var(--c-yellow);
 }

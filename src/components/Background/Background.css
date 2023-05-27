@@ -1,0 +1,67 @@
+.Background{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background-color: var(--c-yellow);
+  z-index: -1;
+}
+
+.Background__item{
+  width: 100px;
+  aspect-ratio: 1;
+  display: flex;
+  position: absolute;
+  border-radius: var(--d-border-radius-rounded);
+  background-color: var(--c-first);
+  filter: blur(50px);
+  animation: 5s  changeColor infinite;
+}
+
+.Background__item--1{
+  --c-first: var(--c-white);
+  --c-second: var(--c-purple);
+  top: -5%;
+  left: 5%;
+}
+
+.Background__item--2{
+  --c-first: var(--c-violet);
+  --c-second: var(--c-green);
+  top: -2%;
+  right: 2%;
+}
+
+.Background__item--3{
+  --c-first: var(--c-green);
+  --c-second: var(--c-white);
+  bottom: 5%;
+  right: 8%;
+}
+
+.Background__item--4{
+  --c-first: var(--c-white);
+  --c-second: var(--c-violet);
+  bottom: 15%;
+  left: 2%;
+}
+
+@keyframes changeColor{
+  50%{ background-color: var(--c-second); }
+  100%{ background-color: var(--c-first); }
+}
+
+.Content__wrapper:has(
+  .CustomLink:hover,
+  .Timeline__item:not(.Timeline__item--selected):hover,
+  .Card__overlay:hover, 
+  .Card__source:hover
+) + .Background .Background__item,
+.Header:has(
+  .CustomLink:not(.CustomLink--active):hover
+) + .Content .Background .Background__item,
+.Content:has( 
+  + .Footer .Footer__link:hover 
+) .Background .Background__item {
+  filter: blur(20px);
+}
