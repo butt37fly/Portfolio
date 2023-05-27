@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1b5cf6b4.css",
+    "main.js": "/portfolio/static/js/main.c01d7eb4.js",
+    "static/media/Github.svg": "/portfolio/static/media/Github.23a93b9deb44c20f13dc9628a22a9951.svg",
+    "static/media/House.svg": "/portfolio/static/media/House.b99e854d7d9bd60a4d364edb2c9e4868.svg",
+    "static/media/Link.svg": "/portfolio/static/media/Link.7078bec51251953555f59ce82b5d2c35.svg",
+    "static/media/Behance.svg": "/portfolio/static/media/Behance.711febbd79410e49ecd059c53397a9f9.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/Mail.svg": "/portfolio/static/media/Mail.a7c6b852a1ffdf7c8edec2fbbebe3254.svg",
+    "static/media/Linkedin.svg": "/portfolio/static/media/Linkedin.3e9f5a4730be7fca3c7df3537b2e87da.svg",
+    "static/media/Telegram.svg": "/portfolio/static/media/Telegram.1216f2df38e852112da1a469b96f3758.svg",
+    "static/media/Arrow.svg": "/portfolio/static/media/Arrow.de41ec2e90f67942349d04f81a29f0b3.svg",
+    "main.1b5cf6b4.css.map": "/portfolio/static/css/main.1b5cf6b4.css.map",
+    "main.c01d7eb4.js.map": "/portfolio/static/js/main.c01d7eb4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b5cf6b4.css",
+    "static/js/main.c01d7eb4.js"
+  ]
+}
