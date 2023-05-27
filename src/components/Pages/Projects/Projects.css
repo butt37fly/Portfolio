@@ -1,0 +1,8 @@
+.Projects{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s-l);
+  padding: var(--s-xl) var(--s-l);
+}

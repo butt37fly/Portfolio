@@ -1,0 +1,67 @@
+.CustomLink{
+  --c-text: var(--c-black-1);
+  --c-bg: var(--c-white);
+  --c-bg-hover: var(--c-white-1);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s-xs) var(--s-s);
+  position: relative;
+  border-radius: var(--d-border-radius);
+  border: var(--d-border);
+  color: var(--c-text);
+  background-color: var(--c-bg);
+  font-weight: 500;
+  font-size: var(--f-customLink);
+  cursor: pointer;
+  outline: unset;
+  text-decoration: none;
+}
+
+.CustomLink--auto{
+  width: auto !important;
+  align-self: center;
+}
+
+.CustomLink--active{
+  --c-text: var(--c-white);
+  --c-bg: var(--c-purple);
+  --c-bg-hover: var(--c-purple);
+  cursor: default;
+}
+
+.CustomLink--has-icon svg{
+  width: var(--s-s);
+  fill: var(--c-text);
+}
+
+.CustomLink--only-icon{
+  width: auto !important;
+  margin: auto;
+}
+
+.CustomLink:not(.CustomLink--only-icon) .CustomLink__text{
+  transform: translateX(15%);
+  z-index: 2;
+}
+
+.CustomLink:not(.CustomLink--only-icon) .Icon{
+  transform: translateX(-100%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.CustomLink:hover{
+  background-color: var(--c-bg-hover);
+}
+
+.CustomLink:not(.CustomLink--only-icon, .CustomLink--active):hover .CustomLink__text{
+  transform: translateX(0%);
+}
+
+.CustomLink:not(.CustomLink--only-icon, .CustomLink--active):hover .Icon{
+  transform: translateX(30%);
+  opacity: 1;
+}

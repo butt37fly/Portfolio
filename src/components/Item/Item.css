@@ -1,0 +1,16 @@
+.Item{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s-m);
+  padding: var(--s-xs);
+  border: var(--d-border);
+  border-radius: var(--d-border-radius);
+  background-color: var(--c-white);
+}
+
+.Item__img{
+  width: calc(45px + 0.5vw);
+  height: auto;
+}
