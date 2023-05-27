@@ -3,17 +3,17 @@
     "Name" : "Website Portfolio",
     "Tags" : [ "Design", "Development" ],
     "Date" : "2023",
-    "Image" : "/img/descarga.png",
+    "Image" : "portfolio/img/descarga.png",
     "Link" : "",
     "Sources" : [
       {
         "Name" : "Github",
-        "Image" : "/img/github.png",
+        "Image" : "portfolio/img/github.png",
         "Link" : "https://github.com/butt37fly/Portfolio"
       },
       {
         "Name" : "Figma",
-        "Image" : "/img/figma.png",
+        "Image" : "portfolio/img/figma.png",
         "Link" : "https://www.figma.com/file/vRw2LLrZb4Zg1Tt9aVMPlL/Website-Portfolio?type=design&node-id=0%3A1&t=frh3Z3WJElICRpkL-1"
       }
     ]
@@ -22,17 +22,17 @@
     "Name" : "Abismo Infinito",
     "Tags" : [ "Design", "Development" ],
     "Date" : "2023",
-    "Image" : "/img/descarga.png",
+    "Image" : "portfolio/img/descarga.png",
     "Link" : "",
     "Sources" : [
       {
         "Name" : "Github",
-        "Image" : "/img/github.png",
+        "Image" : "portfolio/img/github.png",
         "Link" : ""
       },
       {
         "Name" : "Figma",
-        "Image" : "/img/figma.png",
+        "Image" : "portfolio/img/figma.png",
         "Link" : ""
       }
     ]
@@ -41,17 +41,17 @@
     "Name" : "Abismo Infinito",
     "Tags" : [ "Design", "Development" ],
     "Date" : "2023",
-    "Image" : "/img/descarga.png",
+    "Image" : "portfolio/img/descarga.png",
     "Link" : "",
     "Sources" : [
       {
         "Name" : "Github",
-        "Image" : "/img/github.png",
+        "Image" : "portfolio/img/github.png",
         "Link" : ""
       },
       {
         "Name" : "Figma",
-        "Image" : "/img/figma.png",
+        "Image" : "portfolio/img/figma.png",
         "Link" : ""
       }
     ]
@@ -60,17 +60,17 @@
     "Name" : "Abismo Infinito",
     "Tags" : [ "Design", "Development" ],
     "Date" : "2023",
-    "Image" : "/img/descarga.png",
+    "Image" : "portfolio/img/descarga.png",
     "Link" : "",
     "Sources" : [
       {
         "Name" : "Github",
-        "Image" : "/img/github.png",
+        "Image" : "portfolio/img/github.png",
         "Link" : ""
       },
       {
         "Name" : "Figma",
-        "Image" : "/img/figma.png",
+        "Image" : "portfolio/img/figma.png",
         "Link" : ""
       }
     ]
@@ -79,17 +79,17 @@
     "Name" : "Abismo Infinito",
     "Tags" : [ "Design", "Development" ],
     "Date" : "2023",
-    "Image" : "/img/descarga.png",
+    "Image" : "portfolio/img/descarga.png",
     "Link" : "",
     "Sources" : [
       {
         "Name" : "Github",
-        "Image" : "/img/github.png",
+        "Image" : "portfolio/img/github.png",
         "Link" : ""
       },
       {
         "Name" : "Figma",
-        "Image" : "/img/figma.png",
+        "Image" : "portfolio/img/figma.png",
         "Link" : ""
       }
     ]
@@ -98,17 +98,17 @@
     "Name" : "Abismo Infinito",
     "Tags" : [ "Development" ],
     "Date" : "2023",
-    "Image" : "/img/descarga.png",
+    "Image" : "portfolio/img/descarga.png",
     "Link" : "",
     "Sources" : [
       {
         "Name" : "Github",
-        "Image" : "/img/github.png",
+        "Image" : "portfolio/img/github.png",
         "Link" : ""
       },
       {
         "Name" : "Figma",
-        "Image" : "/img/figma.png",
+        "Image" : "portfolio/img/figma.png",
         "Link" : ""
       }
     ]

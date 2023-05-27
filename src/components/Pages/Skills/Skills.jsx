@@ -8,18 +8,18 @@ import "./Skills.css";
 function Skills() {
   const items = [
     {
-      items: [["/img/html.png", "/img/css.png", "/img/js.png"], ["/img/figma.png"]],
+      items: [["portfolio/img/html.png", "portfolio/img/css.png", "portfolio/img/js.png"], ["portfolio/img/figma.png"]],
       text: "I aldready know",
     },
     {
       items: [
-        ["/img/php.png", "/img/mysql.png", "/img/wordpress.png"],
-        ["/img/github.png", "/img/react.png"],
+        ["portfolio/img/php.png", "portfolio/img/mysql.png", "portfolio/img/wordpress.png"],
+        ["portfolio/img/github.png", "portfolio/img/react.png"],
       ],
       text: "I'm still learning",
     },
     {
-      items: [["/img/nodejs.png", "/img/laravel.png"]],
+      items: [["portfolio/img/nodejs.png", "portfolio/img/laravel.png"]],
       text: "I wanna learn",
     },
   ];
