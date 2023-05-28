@@ -1,11 +1,39 @@
 .Footer{
   grid-area: 2 / 1 / 3 / 11;
+  border: var(--d-border);
+  border-width: var(--d-border-width) 0 0 0;
+}
+
+.Footer__wrapper{
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--s-xxs) var(--s-l);
+}
+
+.Footer__button{
+  display: flex;
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  right: 99.5%;
+  padding: 10px;
+  background-color: var(--c-yellow);
   border: var(--d-border);
-  border-width: var(--d-border-width) 0 0 0;
+  border-right: unset;
+}
+
+.Footer__button .Icon{
+  transform: rotate(180deg);
+}
+
+.Footer__button .Icon svg{
+  width: auto;
+  height: var(--s-l);
+  object-fit: contain;
+  fill: var(--c-black-1);
 }
 
 .Footer__section{
@@ -35,6 +63,50 @@
 
 @media (max-width: 768px){
   .Footer{
-    display: none;
+    grid-area: unset;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    border: var(--d-border);
+    border-right: unset;
+    background-color: var(--c-yellow);
+    transform: translateX(105%);
   }
+  
+  .Footer--active{
+    transform: translateX(0);
+  }
+
+  .Footer__wrapper{
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: var(--s-s);
+    position: relative;
+  }
+
+  .Footer--active .Footer__button .Icon{
+    transform: rotate(0);
+  }
+
+  .Footer__button{
+    display: flex;
+  }
+
+  .Footer__section{
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .Footer__link{
+    margin: var(--s-xxs) 0;
+  }
+
+  .Footer__link .Icon--Telegram svg {
+    height: var(--s-xl);
+  }
+
+  .Footer__link .Icon--Mail svg{
+    height: var(--s-l);
+  }
+
 }

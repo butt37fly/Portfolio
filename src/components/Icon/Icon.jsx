@@ -9,6 +9,9 @@ import { ReactComponent as LinkedinIcon } from "../../icons/Linkedin.svg";
 import { ReactComponent as BehanceIcon } from "../../icons/Behance.svg";
 import { ReactComponent as MailIcon } from "../../icons/Mail.svg";
 import { ReactComponent as TelegramIcon } from "../../icons/Telegram.svg";
+import { ReactComponent as AboutIcon } from "../../icons/About.svg";
+import { ReactComponent as SkillsIcon } from "../../icons/Skills.svg";
+import { ReactComponent as ProjectsIcon } from "../../icons/Projects.svg";
 
 function Icon ({ name, modifier }){
   const DEFAULT_ICON = <ArrowIcon />;
@@ -20,7 +23,10 @@ function Icon ({ name, modifier }){
     Linkedin : <LinkedinIcon />,
     Behance : <BehanceIcon />,
     Mail : <MailIcon />,
-    Telegram : <TelegramIcon />
+    Telegram : <TelegramIcon />,
+    About : <AboutIcon />,
+    Skills : <SkillsIcon />,
+    Projects : <ProjectsIcon />
   }
 
   return ( 
