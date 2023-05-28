@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.1c16ccfd.css",
-    "main.js": "/Portfolio/static/js/main.8b220fd8.js",
+    "main.css": "/Portfolio/static/css/main.f83d0eae.css",
+    "main.js": "/Portfolio/static/js/main.d7f106eb.js",
     "static/media/Github.svg": "/Portfolio/static/media/Github.23a93b9deb44c20f13dc9628a22a9951.svg",
     "static/media/House.svg": "/Portfolio/static/media/House.b99e854d7d9bd60a4d364edb2c9e4868.svg",
     "static/media/Link.svg": "/Portfolio/static/media/Link.7078bec51251953555f59ce82b5d2c35.svg",
     "static/media/Behance.svg": "/Portfolio/static/media/Behance.711febbd79410e49ecd059c53397a9f9.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/Mail.svg": "/Portfolio/static/media/Mail.a7c6b852a1ffdf7c8edec2fbbebe3254.svg",
+    "static/media/Projects.svg": "/Portfolio/static/media/Projects.94690914b47fc16fc78b9cec0c745f4a.svg",
     "static/media/Linkedin.svg": "/Portfolio/static/media/Linkedin.3e9f5a4730be7fca3c7df3537b2e87da.svg",
     "static/media/Telegram.svg": "/Portfolio/static/media/Telegram.1216f2df38e852112da1a469b96f3758.svg",
     "static/media/Arrow.svg": "/Portfolio/static/media/Arrow.de41ec2e90f67942349d04f81a29f0b3.svg",
-    "main.1c16ccfd.css.map": "/Portfolio/static/css/main.1c16ccfd.css.map",
-    "main.8b220fd8.js.map": "/Portfolio/static/js/main.8b220fd8.js.map"
+    "static/media/About.svg": "/Portfolio/static/media/About.c8433c517fe3de820d3024b19c972354.svg",
+    "static/media/Skills.svg": "/Portfolio/static/media/Skills.f0fc199eda2e9207eac4b35235a5f7d2.svg",
+    "main.f83d0eae.css.map": "/Portfolio/static/css/main.f83d0eae.css.map",
+    "main.d7f106eb.js.map": "/Portfolio/static/js/main.d7f106eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c16ccfd.css",
-    "static/js/main.8b220fd8.js"
+    "static/css/main.f83d0eae.css",
+    "static/js/main.d7f106eb.js"
   ]
 }
