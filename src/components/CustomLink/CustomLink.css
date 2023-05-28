@@ -65,3 +65,9 @@
   transform: translateX(30%);
   opacity: 1;
 }
+
+@media (max-width: 768px){
+  .CustomLink--active{
+    transform: translateY(-5px);
+  }
+}

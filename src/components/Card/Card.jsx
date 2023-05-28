@@ -17,16 +17,15 @@ function Card({ data }) {
   const getSources = (sources) =>
     sources.map((item) => {
       return (
-        <a key={uuid()} href={item.Link} className="Card__link" target="_blank">
+        <a key={uuid()} href={item.Link} className="Card__link" target="_blank" rel="noreferrer">
           <img className="Card__source" src={item.Image} alt={item.Name} />
         </a>
       );
   });
 
-
   return (
     <article className="Card">
-      <a href={data.Link} className="Card__thumbnail" target="_blank">
+      <a href={data.Link} className="Card__thumbnail" target="_blank" rel="noreferrer" >
         <div className="Card__overlay">
           <Icon name={"Link"}/>
         </div>

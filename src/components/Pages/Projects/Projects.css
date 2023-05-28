@@ -6,3 +6,16 @@
   gap: var(--s-l);
   padding: var(--s-xl) var(--s-l);
 }
+
+@media (max-width: 1024px){
+  .Projects{
+    grid-template-columns: repeat(2, 1fr);
+    padding: unset;
+  }
+}
+
+@media (max-width: 425px){
+  .Projects{
+    grid-template-columns: 1fr;
+  }
+}

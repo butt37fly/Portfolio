@@ -60,6 +60,8 @@
 
 .Card__title{
   pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .Card__date{
@@ -115,3 +117,4 @@
   width: 25px;
   height: auto;
 }
+

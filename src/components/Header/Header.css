@@ -19,3 +19,20 @@
   left: -50%;
   z-index: 10;
 }
+
+.Header-mobile{
+  width: 100%;
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: solid var(--d-border-width) var(--d-border-color);
+}
+
+.Header__wrapper-mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s-l);
+  padding: var(--s-xxs);
+}

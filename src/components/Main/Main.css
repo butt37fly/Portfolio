@@ -22,7 +22,10 @@
 }
 
 .Content__wrapper--start{
+  padding-top: var(--s-xl);
+  padding-bottom: var(--s-xl);
   align-items: start;
+  justify-content: flex-start;
 }
 
 .Content__section{
@@ -67,3 +70,12 @@
   margin-bottom: var(--s-xs);
 }
 
+.Content__text--center{
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  .Content{
+    grid-area: 1 / 1 / 2 / 2;
+  }
+}
