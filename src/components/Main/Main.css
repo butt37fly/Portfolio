@@ -13,7 +13,7 @@
   flex-direction: row;
   gap: var(--s-xl);
   position: absolute;
-  padding: 0 min(100px, 10%);
+  padding: 0 min(100px, 5%);
   overflow: auto;
 }
 

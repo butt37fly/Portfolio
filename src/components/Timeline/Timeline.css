@@ -10,6 +10,7 @@
 
 .Timeline__title{
   text-align: center;
+  font-size: var(--f-subtitle);
 }
 
 .Timeline__indicator{

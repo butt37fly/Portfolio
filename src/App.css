@@ -87,6 +87,10 @@
 }
 
 @media (max-width: 768px){
+  :root{
+    --f-subtitle: calc(var(--s-m) + 1.2vw);
+    --f-text: calc(var(--s-xxs) + 1.2vw);
+  }
   .App{
     grid-template-columns: 1fr;
     grid-template-rows: 10fr 1fr;
