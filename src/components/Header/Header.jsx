@@ -16,23 +16,23 @@ function Header() {
       target : '/'
     }, 
     {
-      name: 'about-me', 
-      text : isMobile ? '' : 'About Me',
-      iconName : isMobile ? "About" : "Arrow",
-      target : '/about-me'
-    }, 
+      name: 'projects', 
+      text : isMobile ? '' : 'Proyectos',
+      iconName : isMobile ? "Projects" : "Arrow",
+      target : '/projects'
+    },
     {
       name: 'skills', 
-      text : isMobile ? '' : 'Skills',
+      text : isMobile ? '' : 'Habilidades',
       iconName : isMobile ? "Skills" : "Arrow",
       target : '/skills'
     }, 
     {
-      name: 'projects', 
-      text : isMobile ? '' : 'Projects',
-      iconName : isMobile ? "Projects" : "Arrow",
-      target : '/projects'
-    }
+      name: 'about-me', 
+      text : isMobile ? '' : 'Sobre mi',
+      iconName : isMobile ? "About" : "Arrow",
+      target : '/about-me'
+    } 
   ];
   const classes = {
     Header : isMobile ? "Header-mobile" : "Header",

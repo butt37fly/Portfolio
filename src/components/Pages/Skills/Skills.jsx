@@ -26,10 +26,7 @@ function Skills() {
         ],
         ["portfolio/img/github.png", "portfolio/img/react.png"],
       ],
-    },
-    {
-      items: [["portfolio/img/nodejs.png", "portfolio/img/laravel.png"]],
-    },
+    }
   ];
 
   return (

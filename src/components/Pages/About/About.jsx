@@ -12,32 +12,32 @@ function About(){
 
   const info = {
     education : {
-      title : "Education",
+      title : "Educación",
       items : [
         {
           title : "Coderise Bootcamp | 2018",
           items : [
-            "Web programmings principles"
+            "Principios del desarrollo web"
           ]
         },
         {
           title : "SENA CTMA | 2019 - 2022",
           items : [
-            "Technique in development and multimedia integration",
-            "Tecnology in multimedia production"
+            "Técnica en diseño e integración multimedia",
+            "Tecnología en producción multimedia"
           ]
         }
       ]
     },
     experience : {
-      title : "Experience",
+      title : "Experiencia",
       items : [
         {
-          title : "Marca Creativos SAS | 2022 - 2023",
+          title : "Marca Creativos SAS | 2022 - Presente",
           items : [
-            "Website layout building in Figma",
-            "Website development in Wordpress",
-            "Custom theme development in Wordpress"
+            "Desarrollo de sitios web en Wordpress",
+            "Desarrollo de temas para Wordpress",
+            "Maquetación de sitios web en Figma"
           ]
         }
       ]
@@ -48,9 +48,9 @@ function About(){
     <motion.div className={ `Content__wrapper ${ isMobile ? "Content__wrapper--column Content__wrapper--start" : "" }` }
     initial={{transform : "translateX(100%)", opacity : 0}} animate={{transform : "translateX(0%)", opacity: 1}} exit={{transform : "translateX(-100%)", opacity: 0}}>
       <section className={ `Content__section ${ !isMobile ? "Content__section--50" : "" }` }>
-        <p className="Content__text">As i said before, My name is <strong>Andrés Ospina</strong>, i’m 19 yo and i’m a <strong>Frontend Developer</strong>. I live in Medellín, Colombia.</p>
-        <p className="Content__text">Since i discover the programming in 2018 throgh the <strong>Coderise Bootcamp</strong>, i felt in love with this topic. Coding things really make me happy, getting new challens everyday and learning new stuff. I love to listen music too, this is one of my biggest passions, whit the videogames and the books.</p>
-        <p className="Content__text">I considere that i’m good at teamworking, bcs i like to help other people, being helped, and above all, learning with others.</p>
+        <p className="Content__text">Mi nombre es <strong>Andrés Ospina</strong>, tengo 19 años y soy un <strong>Frontend Developer</strong>. Actualmente vivo en la ciudad de Medellín, Colombia.</p>
+        <p className="Content__text">Desde que conocí la programación en el año 2018 gracias al <strong>Bootcamp de Coderise</strong>, me enamoré de este tema. Programar es algo que realmente me hace feliz, tener nuevos retos cada día y aprender cosas nuevas. También me encanta la música, es una de mis grandes aficiones, junto con los videojuegos y la lectura.</p>
+        <p className="Content__text">Considero que soy bueno trabajando en equipo, esto debido a que me encanta ayudar cuando está en mi posibilidad, recibir y dar feedback, y aprender en compañía.</p>
       </section>
       <section className={ `Content__section ${ !isMobile ? "Content__section--50" : "" }` }>
         <Timeline data={info.education} />
