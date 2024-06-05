@@ -19,21 +19,30 @@
     ]
   },
   {
-    "Name" : "OhMyPet",
-    "Tags" : [ "Diseño", "Desarrollo" ],
+    "Name" : "Grupo MUA",
+    "Tags" : [ "Desarrollo" ],
     "Date" : "2023",
-    "Image" : "portfolio/img/descarga.png",
-    "Link" : "",
+    "Image" : "portfolio/img/projects/grupomua.png",
+    "Link" : "https://grupomua.com.co/",
     "Sources" : [
       {
-        "Name" : "Github",
-        "Image" : "portfolio/img/github.png",
-        "Link" : "https://github.com/butt37fly/OhMyPet"
-      },
+        "Name" : "MarcaCreativos",
+        "Image" : "portfolio/img/Marca.png",
+        "Link" : "https://marcacreativos.com/"
+      }
+    ]
+  },
+  {
+    "Name" : "Simona Supermercados",
+    "Tags" : [ "Desarrollo" ],
+    "Date" : "2023",
+    "Image" : "portfolio/img/projects/simonasupermercados.png",
+    "Link" : "http://prueba.simona.com.co/",
+    "Sources" : [
       {
-        "Name" : "Behance",
-        "Image" : "portfolio/img/behance.png",
-        "Link" : "https://www.behance.net/gallery/143851155/OhMyPet/modules/812673803"
+        "Name" : "MarcaCreativos",
+        "Image" : "portfolio/img/Marca.png",
+        "Link" : "https://marcacreativos.com/"
       }
     ]
   },
