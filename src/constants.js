@@ -48,12 +48,12 @@ export const LINKS = {
     repo: {
       name: 'Repositorio',
       icon: 'github',
-      url: '#',
+      url: 'https://github.com/butt37fly/portafolio',
     },
     figma: {
       name: 'Maqueta',
       icon: 'figma',
-      url: '#',
+      url: 'https://www.figma.com/design/XEuEiPs8XcDOwZgDlIG4Qn/Portafolio?node-id=2-4&t=g9cnWSbAKORRRqob-1',
     },
   },
 }
