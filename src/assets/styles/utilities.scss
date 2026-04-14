@@ -1,0 +1,131 @@
+$widths: (
+  100: 100%,
+  50: 50%,
+  auto: auto,
+);
+
+$directions: (row, row-reverse, column, column-reverse);
+
+$justify-values: (
+  center: center,
+  start: flex-start,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly,
+);
+
+$sizes: (
+  xxs: var(--size-xxs),
+  xs: var(--size-xs),
+  s: var(--size-s),
+  m: var(--size-m),
+  l: var(--size-l),
+  xl: var(--size-xl),
+  0: unset,
+  auto: auto,
+);
+
+.u-flex {
+  --justify: center;
+  --align: center;
+  --width: auto;
+
+  display: flex;
+
+  align-items: var(--align);
+  flex-direction: column;
+  justify-content: var(--justify);
+  width: var(--width);
+}
+
+@each $name, $value in $widths {
+  .u-w-#{$name} {
+    --width: #{$value};
+  }
+}
+
+@each $dir in $directions {
+  .u-#{$dir} {
+    flex-direction: #{$dir};
+  }
+}
+
+@each $name, $value in $justify-values {
+  .u-justify-#{$name} {
+    --justify: #{$value};
+  }
+
+  .u-align-#{$name} {
+    --align: #{$value};
+  }
+}
+
+@each $name, $value in $sizes {
+  /* Padding */
+  .u-padding-#{$name} {
+    padding: $value;
+  }
+
+  .u-padding-x-#{$name} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+
+  .u-padding-y-#{$name} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+
+  .u-pt-#{$name} {
+    padding-top: $value;
+  }
+
+  .u-pb-#{$name} {
+    padding-bottom: $value;
+  }
+
+  .u-pl-#{$name} {
+    padding-left: $value;
+  }
+
+  .u-pr-#{$name} {
+    padding-right: $value;
+  }
+
+  /* Margin */
+  .u-margin-#{$name} {
+    margin: $value;
+  }
+
+  .u-margin-x-#{$name} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  .u-margin-y-#{$name} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+
+  .u-mt-#{$name} {
+    margin-top: $value;
+  }
+
+  .u-mb-#{$name} {
+    margin-bottom: $value;
+  }
+
+  .u-ml-#{$name} {
+    margin-left: $value;
+  }
+
+  .u-mr-#{$name} {
+    margin-right: $value;
+  }
+
+  /* Gap */
+  .u-gap-#{$name} {
+    gap: $value;
+  }
+}
