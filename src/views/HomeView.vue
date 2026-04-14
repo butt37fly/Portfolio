@@ -18,7 +18,7 @@ const button = {
   <main class="container home">
     <section class="u-flex u-gap-l">
       <div class="u-flex u-w-100 u-row u-gap-xl">
-        <img style="background-color: red" src="" alt="" width="220" height="220" />
+        <img id="home__pfp" src="" alt="" width="220" height="220" />
         <div class="u-flex u-align-start u-gap-l">
           <div class="u-flex">
             <h1 class="title">{{ texts.title }}</h1>
@@ -51,4 +51,12 @@ const button = {
   </main>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+#home__pfp {
+  border: 1px solid var(--color-white);
+  border-radius: 1000px;
+  width: 230px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+</style>
