@@ -37,3 +37,14 @@ __screenshots__/
 
 # Vite
 *.timestamp-*-*.mjs
+
+# Archivos de configuración del editor/IDE
+.editorconfig
+.oxdintrc.json
+.prettierrc.json
+eslint.config.js
+jsconfig.json
+vite.config.js
+
+# Archivos de git
+.gitattributes
