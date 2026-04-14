@@ -25,11 +25,11 @@ const props = defineProps({
       <div class="c-card__heading u-flex u-w-100 u-align-start u-gap-s">
         <h3 class="c-card__title subtitle">{{ props.title }}</h3>
         <div class="c-card__details u-flex u-row u-gap-s">
-          <span class="c-card__detail u-flex u-row u-gap-xxs">
+          <span v-show="props.date != ''" class="c-card__detail u-flex u-row u-gap-xxs">
             <IconDefault name="clock" />
             {{ props.date }}
           </span>
-          <span class="c-card__detail u-flex u-row u-gap-xxs">
+          <span v-show="props.at != ''" class="c-card__detail u-flex u-row u-gap-xxs">
             <IconDefault name="link" />
             {{ props.at_text }}
             <a :href="props.at_url" target="_blank"> {{ props.at }}</a>
