@@ -1,8 +1,8 @@
 [
   {
     "pinned": true,
-    "image": "/img/projects/simona-supermercados/destacada.png",
-    "gallery": ["/img/projects/simona-supermercados/inicio.png"],
+    "image": "/portafolio/img/projects/simona-supermercados/destacada.png",
+    "gallery": ["/portafolio/img/projects/simona-supermercados/inicio.png"],
     "title": "Simona Supermercados",
     "url": "https://simona.com.co/",
     "date": "2026",
@@ -15,11 +15,11 @@
   },
   {
     "pinned": true,
-    "image": "/img/projects/agencia-d-puntas/destacada.png",
+    "image": "/portafolio/img/projects/agencia-d-puntas/destacada.png",
     "gallery": [
-      "/img/projects/agencia-d-puntas/inicio.png",
-      "/img/projects/agencia-d-puntas/servicios.png",
-      "/img/projects/agencia-d-puntas/marcas.png"
+      "/portafolio/img/projects/agencia-d-puntas/inicio.png",
+      "/portafolio/img/projects/agencia-d-puntas/servicios.png",
+      "/portafolio/img/projects/agencia-d-puntas/marcas.png"
     ],
     "title": "Agencia DPuntas",
     "url": "https://agenciadpuntas.com/",
@@ -33,8 +33,8 @@
   },
   {
     "pinned": true,
-    "image": "/img/projects/melissa-bravo/destacada.png",
-    "gallery": ["/img/projects/melissa-bravo/inicio.png"],
+    "image": "/portafolio/img/projects/melissa-bravo/destacada.png",
+    "gallery": ["/portafolio/img/projects/melissa-bravo/inicio.png"],
     "title": "Melissa Bravo",
     "url": "https://melissabravo.com/",
     "date": "2026",
@@ -47,8 +47,8 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/kleent/destacada.png",
-    "gallery": ["/img/projects/kleent/inicio.png"],
+    "image": "/portafolio/img/projects/kleent/destacada.png",
+    "gallery": ["/portafolio/img/projects/kleent/inicio.png"],
     "title": "Kleent",
     "url": "https://itskleent.com/",
     "date": "2026",
@@ -61,10 +61,10 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/mia-and-glow/destacada.png",
+    "image": "/portafolio/img/projects/mia-and-glow/destacada.png",
     "gallery": [
-      "/img/projects/mia-and-glow/inicio.png",
-      "/img/projects/mia-and-glow/categorias.png"
+      "/portafolio/img/projects/mia-and-glow/inicio.png",
+      "/portafolio/img/projects/mia-and-glow/categorias.png"
     ],
     "title": "Mia & Glow",
     "url": "https://www.miayglow.com/",
@@ -78,11 +78,11 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/instinto/destacada.png",
+    "image": "/portafolio/img/projects/instinto/destacada.png",
     "gallery": [
-      "/img/projects/instinto/inicio.png",
-      "/img/projects/instinto/categorias.png",
-      "/img/projects/instinto/proyectos.png"
+      "/portafolio/img/projects/instinto/inicio.png",
+      "/portafolio/img/projects/instinto/categorias.png",
+      "/portafolio/img/projects/instinto/proyectos.png"
     ],
     "title": "Instinto",
     "url": "https://www.instintohome.com/",
@@ -96,8 +96,11 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/grupo-mua/destacada.png",
-    "gallery": ["/img/projects/grupo-mua/inicio.png", "/img/projects/grupo-mua/aliados.png"],
+    "image": "/portafolio/img/projects/grupo-mua/destacada.png",
+    "gallery": [
+      "/portafolio/img/projects/grupo-mua/inicio.png",
+      "/portafolio/img/projects/grupo-mua/aliados.png"
+    ],
     "title": "Grupo MUA",
     "url": "https://grupomua.com.co/",
     "date": "2023",
@@ -110,10 +113,10 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/miranda-talents/destacada.png",
+    "image": "/portafolio/img/projects/miranda-talents/destacada.png",
     "gallery": [
-      "/img/projects/miranda-talents/inicio.png",
-      "/img/projects/miranda-talents/actrices.png"
+      "/portafolio/img/projects/miranda-talents/inicio.png",
+      "/portafolio/img/projects/miranda-talents/actrices.png"
     ],
     "title": "Miranda Talents",
     "url": "https://www.mirandatalents.net/",
@@ -127,8 +130,8 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/cadmanmg/destacada.png",
-    "gallery": ["/img/projects/cadmanmg/inicio.png"],
+    "image": "/portafolio/img/projects/cadmanmg/destacada.png",
+    "gallery": ["/portafolio/img/projects/cadmanmg/inicio.png"],
     "title": "CADMAN MG",
     "url": "https://cadmanmanagementgroup.com/es/inicio/",
     "date": "2023",
@@ -141,8 +144,8 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/masaki/destacada.png",
-    "gallery": ["/img/projects/masaki/inicio.png"],
+    "image": "/portafolio/img/projects/masaki/destacada.png",
+    "gallery": ["/portafolio/img/projects/masaki/inicio.png"],
     "title": "Masaki",
     "url": "https://www.masakibienestar.pro/",
     "date": "2025",
@@ -155,10 +158,10 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/zafiro-barber/destacada.png",
+    "image": "/portafolio/img/projects/zafiro-barber/destacada.png",
     "gallery": [
-      "/img/projects/zafiro-barber/inicio.png",
-      "/img/projects/zafiro-barber/servicios.png"
+      "/portafolio/img/projects/zafiro-barber/inicio.png",
+      "/portafolio/img/projects/zafiro-barber/servicios.png"
     ],
     "title": "Zafiro Barber",
     "url": "https://www.zafirobarber.com/",
@@ -173,8 +176,8 @@
 
   {
     "pinned": false,
-    "image": "/img/projects/napa-autoglass/destacada.png",
-    "gallery": ["/img/projects/napa-autoglass/inicio.png"],
+    "image": "/portafolio/img/projects/napa-autoglass/destacada.png",
+    "gallery": ["/portafolio/img/projects/napa-autoglass/inicio.png"],
     "title": "NAPA Auto Glass",
     "url": "https://napautoglass.com/",
     "date": "2024",
@@ -187,8 +190,8 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/drinkcentral/destacada.png",
-    "gallery": ["/img/projects/drinkcentral/inicio.png"],
+    "image": "/portafolio/img/projects/drinkcentral/destacada.png",
+    "gallery": ["/portafolio/img/projects/drinkcentral/inicio.png"],
     "title": "DrinkCentral",
     "url": "https://drinkcentral.co/",
     "date": "2023",
@@ -201,8 +204,8 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/marca-creativos/destacada.png",
-    "gallery": ["/img/projects/marca-creativos/inicio.png"],
+    "image": "/portafolio/img/projects/marca-creativos/destacada.png",
+    "gallery": ["/portafolio/img/projects/marca-creativos/inicio.png"],
     "title": "Marca Creativos",
     "url": "https://marcacreativos.com/",
     "date": "2023",
@@ -215,8 +218,8 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/jaisal/destacada.png",
-    "gallery": ["/img/projects/jaisal/inicio.png"],
+    "image": "/portafolio/img/projects/jaisal/destacada.png",
+    "gallery": ["/portafolio/img/projects/jaisal/inicio.png"],
     "title": "Jaisal",
     "url": "http://jaisal.com.co/",
     "date": "2022",
@@ -229,8 +232,8 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/armonia-musicoterapia/destacada.png",
-    "gallery": ["/img/projects/armonia-musicoterapia/inicio.png"],
+    "image": "/portafolio/img/projects/armonia-musicoterapia/destacada.png",
+    "gallery": ["/portafolio/img/projects/armonia-musicoterapia/inicio.png"],
     "title": "Armonía Músico-terapia",
     "url": "https://www.armoniamusicoterapia.es/",
     "date": "2025",
@@ -243,10 +246,10 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/rodrigo-aguirre/destacada.png",
+    "image": "/portafolio/img/projects/rodrigo-aguirre/destacada.png",
     "gallery": [
-      "/img/projects/rodrigo-aguirre/inicio.png",
-      "/img/projects/rodrigo-aguirre/servicios.png"
+      "/portafolio/img/projects/rodrigo-aguirre/inicio.png",
+      "/portafolio/img/projects/rodrigo-aguirre/servicios.png"
     ],
     "title": "Rodrigo Aguirre",
     "url": "https://www.rodrigoaguirredecarcer.net/",
@@ -260,8 +263,8 @@
   },
   {
     "pinned": false,
-    "image": "/img/projects/iglesia-casa-de-fe/destacada.png",
-    "gallery": ["/img/projects/iglesia-casa-de-fe/inicio.png"],
+    "image": "/portafolio/img/projects/iglesia-casa-de-fe/destacada.png",
+    "gallery": ["/portafolio/img/projects/iglesia-casa-de-fe/inicio.png"],
     "title": "Iglesia Casa de Fe",
     "url": "https://iglesiacasadefeonline.com/",
     "date": "2024",

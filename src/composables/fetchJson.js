@@ -1,8 +1,10 @@
 const cache = new Map()
 
 export async function fetchJson(path) {
-  // const url = `${import.meta.env.BASE_URL}${path}`
-  const url = `${path}`
+  const normalizedPath = path.replace(/^\//, '')
+
+  const baseUrl = import.meta.env.BASE_URL
+  const url = `${baseUrl}${normalizedPath}`
 
   if (cache.has(url)) {
     return cache.get(url)
