@@ -1,14 +1,16 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, computed } from 'vue'
 import { fetchJson } from '@/composables/fetchJson'
 import { MasonryWall } from '@yeger/vue-masonry-wall'
 
 import CardProject from '@/components/Card-project.vue'
 import ButtonDefault from '@/components/Button-default.vue'
+import CardProjectSkeleton from '@/components/Card-project-skeleton.vue'
 
 const path = '/json/projects.json'
 const projects = ref([])
 const activeProject = ref({})
+const isLoading = ref(true)
 
 let isModalActive = ref(null)
 
@@ -17,8 +19,17 @@ const openProject = (data) => {
   activeProject.value = data
 }
 
+const masonryItems = computed(() => {
+  if (isLoading.value) {
+    return Array(6).fill({ isSkeleton: true })
+  }
+  return projects.value
+})
+
 onMounted(async () => {
+  isLoading.value = true
   projects.value = await fetchJson(path)
+  isLoading.value = false
 
   if (projects.value.length > 0) {
     activeProject.value = projects.value[0]
@@ -30,14 +41,15 @@ onMounted(async () => {
   <main class="container projects u-flex u-w-100 u-align-start u-justify-start">
     <MasonryWall
       class="c-feed"
-      :items="projects"
+      :items="masonryItems"
       :gap="16"
       :column-width="300"
       :min-columns="1"
       :max-columns="6"
     >
       <template #default="{ item }">
-        <CardProject v-bind="item" :onClick="() => openProject(item)" />
+        <CardProjectSkeleton v-if="item.isSkeleton" />
+        <CardProject v-else v-bind="item" :onClick="() => openProject(item)" />
       </template>
     </MasonryWall>
     <section v-show="isModalActive" class="c-modal u-flex u-align-center u-justify-center">
