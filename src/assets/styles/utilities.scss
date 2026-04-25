@@ -15,6 +15,13 @@ $justify-values: (
   evenly: space-evenly,
 );
 
+$text-align: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  justify: justify,
+);
+
 $sizes: (
   xxs: var(--size-xxs),
   xs: var(--size-xs),
@@ -58,6 +65,13 @@ $sizes: (
 
   .u-align-#{$name} {
     --align: #{$value};
+  }
+}
+
+@each $name, $value in $text-align {
+  .u-text-#{$name},
+  .u-text-#{$name} > p {
+    --text-align: #{$value};
   }
 }
 

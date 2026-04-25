@@ -145,9 +145,11 @@ span,
 input,
 label,
 ul {
+  --text-align: start;
   color: var(--color-text);
-  width: 100%;
   max-width: var(--text-width);
+  text-align: var(--text-align);
+  width: 100%;
 }
 
 ul {
