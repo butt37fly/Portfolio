@@ -66,17 +66,27 @@ export const TEXTS = {
   views: {
     home: {
       title: 'Andrés Ospina',
-      subtitle: 'Web Developer',
-      description:
-        '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim gravida euismod. In hac habitasse platea dictumst. Integer consectetur lacus non nisi interdum posuere. Morbi consequat efficitur magna.</p>',
+      subtitle: 'Desarrollador Web',
+      description: `
+        <p>¡Hola! Soy desarrollador web desde hace más de 3 años, me especializo en crear experiencias digitales que funcionan de verdad.</p>
+
+        <p>Mi zona de confort profesional, WordPress: desarrollo temas, plugins a medida e implemento diseños pixel perfect, pensados para la comodidad de cada pantalla.</p>
+
+        <p>Sin embargo también me apasiona ir más allá del CMS. Me gusta automatizar procesos y trabajar con grandes volúmenes de datos, sin descuidar un frontend limpio y moderno.</p>
+        `,
     },
     projects: {
       title: 'Proyectos',
     },
     about: {
       title: 'Sobre mi',
-      description:
-        '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim gravida euismod. In hac habitasse platea dictumst. Integer consectetur lacus non nisi interdum posuere. Morbi consequat efficitur magna.</p>',
+      description: `
+        <p>¡Hola! Soy desarrollador web desde hace más de 3 años, me especializo en crear experiencias digitales que funcionan de verdad.</p>
+
+        <p>Mi zona de confort profesional, WordPress: desarrollo temas, plugins a medida e implemento diseños pixel perfect, pensados para la comodidad de cada pantalla.</p>
+
+        <p>Sin embargo también me apasiona ir más allá del CMS. Me gusta automatizar procesos y trabajar con grandes volúmenes de datos, sin descuidar un frontend limpio y moderno.</p>
+        `,
     },
   },
 }
