@@ -46,7 +46,9 @@ const props = defineProps({
   </article>
 
   <article v-else class="c-card u-flex u-align-start u-justify-start u-w-100">
-    <img class="c-card__image" :src="props.image" :alt="props.title" />
+    <div class="c-card__image-wrapper" :style="`background-image: url(${props.image}) ;`">
+      <img class="c-card__image u-flex" :src="props.image" :alt="props.title" />
+    </div>
     <div class="c-card__content u-flex u-w-100 u-padding-m u-gap-m">
       <div class="c-card__heading u-flex u-row u-w-100 u-align-end u-gap-xxs">
         <h3 class="c-card__title subtitle">{{ props.title }}</h3>
@@ -74,16 +76,47 @@ const props = defineProps({
   overflow: hidden;
   transition: filter 0.3s;
 
+  &:not(.c-card--modal) {
+    cursor: pointer;
+  }
+
   &:hover {
     filter: drop-shadow(0px 0px 10px var(--color-secondary));
+
+    & .c-card__image {
+      transform: scale(0.8);
+    }
+  }
+
+  &__image-wrapper {
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 0;
+    }
   }
 
   &__image {
     border-radius: 10px;
-    cursor: pointer;
     height: 100%;
     object-fit: cover;
     width: 100%;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
   }
 
   &__title {
