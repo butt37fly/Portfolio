@@ -21,7 +21,7 @@ const button = {
             <h1 class="title u-text-center" v-html="texts.title"></h1>
             <h2 class="title title--alt u-text-center" v-html="texts.subtitle"></h2>
           </div>
-          <div class="u-flex" v-html="texts.description"></div>
+          <div class="u-flex u-text-center" v-html="texts.description"></div>
         </div>
       </div>
       <div class="u-flex">

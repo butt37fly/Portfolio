@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 main {
   display: flex;
   grid-area: 1 / 1 / 10 / 11;
@@ -11,15 +16,11 @@ main {
   gap: var(--size-3);
   width: 100%;
   margin: auto;
+  z-index: 10;
 
   @include respond-to(md) {
-    grid-area: 1 / 1 / 10 / 13;
-    padding-top: 90px;
-  }
-
-  @include respond-to(sm) {
-    padding: var(--size-7);
-    padding-top: 90px;
+    grid-area: 1 / 1 / 11 / 13;
+    padding: 90px var(--size-7);
   }
 }
 

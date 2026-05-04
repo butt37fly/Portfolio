@@ -61,36 +61,40 @@ onMounted(async () => {
         <CardProject v-else v-bind="item" :onClick="() => openProject(item)" />
       </template>
     </MasonryWall>
-    <section v-show="isModalActive" class="c-modal u-flex u-align-center u-justify-center">
-      <div class="c-modal__wrapper u-flex u-row u-align-center u-justify-center u-g-3">
-        <div class="c-modal__images u-flex u-align-center u-justify-start u-g-3 u-px-3">
-          <img
-            v-for="item in activeProject.gallery"
-            :key="item"
-            :src="item"
-            :alt="activeProject.title"
-            class="c-modal__image"
-          />
-        </div>
-        <div class="c-modal__content">
-          <CardProject v-bind="activeProject" :onModal="true" />
-          <div
-            class="c-modal__footer u-flex u-w-100 u-row u-align-center u-justify-between u-g-3 u-p-3"
-          >
-            <div class="c-modal__actions u-flex u-row u-g-2"></div>
-            <div class="c-modal__actions u-flex u-row u-g-2">
-              <ButtonDefault title="Visitar web" icon="link" :url="activeProject.url" />
-              <ButtonDefault
-                title="Cerrar"
-                icon="cancel"
-                :isAction="true"
-                :onClick="closeProject"
-              />
+    <Teleport to="body">
+      <section v-show="isModalActive" class="c-modal u-flex u-align-center u-justify-center">
+        <div
+          class="c-modal__wrapper u-flex u-row u-md-column u-align-center u-justify-center u-g-3"
+        >
+          <div class="c-modal__images u-flex u-align-center u-justify-start u-g-3 u-px-3">
+            <img
+              v-for="item in activeProject.gallery"
+              :key="item"
+              :src="item"
+              :alt="activeProject.title"
+              class="c-modal__image"
+            />
+          </div>
+          <div class="c-modal__content">
+            <CardProject v-bind="activeProject" :onModal="true" />
+            <div
+              class="c-modal__footer u-flex u-w-100 u-row u-align-center u-justify-between u-g-3 u-p-3"
+            >
+              <div class="c-modal__actions u-flex u-row u-g-2"></div>
+              <div class="c-modal__actions u-flex u-row u-g-2">
+                <ButtonDefault title="Visitar web" icon="link" :url="activeProject.url" />
+                <ButtonDefault
+                  title="Cerrar"
+                  icon="cancel"
+                  :isAction="true"
+                  :onClick="closeProject"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Teleport>
   </main>
 </template>
 
@@ -113,7 +117,7 @@ onMounted(async () => {
     height: 100%;
     position: absolute;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
   }
 
   &__wrapper {
@@ -122,7 +126,7 @@ onMounted(async () => {
     border: 1px solid var(--color-white);
     height: 90%;
     width: min(90%, 1000px);
-    z-index: 1;
+    z-index: 100;
     overflow: hidden;
   }
 

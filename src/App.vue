@@ -2,16 +2,19 @@
 import Header from '@/components/templates/Header-default.vue'
 import Footer from '@/components/templates/Footer-default.vue'
 import CursorDefault from './components/Cursor-default.vue'
+import BackgroundDefault from './components/Background-default.vue'
 </script>
 
 <template>
   <Header></Header>
+  <BackgroundDefault />
+  <CursorDefault />
   <RouterView v-slot="{ Component }">
     <Transition name="page-slid" mode="out-in">
       <component :is="Component" />
     </Transition>
   </RouterView>
-  <CursorDefault />
+
   <Footer></Footer>
 </template>
 
@@ -27,6 +30,8 @@ import CursorDefault from './components/Cursor-default.vue'
 
   @include respond-to(md) {
     grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    min-height: 100vh;
   }
 }
 

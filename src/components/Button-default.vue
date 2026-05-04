@@ -65,17 +65,18 @@ const textStyle = () => {
 <style lang="scss">
 .c-button {
   --accent-color: var(--color-blue-02);
-  --background-color: var(--color-background);
+  --background-color: rgba(255, 255, 255, 0.1);
   --text-color: var(--color-text);
 
   background-color: var(--background-color);
   border-radius: var(--corner-button);
-  border: 2px solid var(--color-white);
+  border: 1px solid var(--color-white);
   color: var(--color-text);
   cursor: pointer;
   filter: drop-shadow(0px 0px 5px transparent);
   transition: 0.3s;
   text-decoration: none;
+  backdrop-filter: blur(60px);
 
   &__title {
     font-family: var(--font-family-primary), sans-serif;

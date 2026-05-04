@@ -4,7 +4,7 @@ import { MENU } from '@/constants'
 </script>
 
 <template>
-  <header class="c-header u-flex u-w-100 u-p-5">
+  <header class="c-header u-flex u-w-100 u-p-5 u-md-p-3">
     <nav class="c-header__menu u-flex u-g-3">
       <ButtonDefault
         v-for="item in MENU"
@@ -27,6 +27,7 @@ import { MENU } from '@/constants'
   height: 100%;
   min-width: 240px;
   overflow: hidden !important;
+  z-index: 5;
 
   &__menu {
     z-index: 2;
@@ -41,7 +42,12 @@ import { MENU } from '@/constants'
   }
 
   @include respond-to(md) {
-    grid-area: 10 / 1 / 11 / 13;
+    bottom: 0;
+    grid-area: unset;
+    height: auto;
+    left: 0;
+    position: fixed;
+    z-index: 99;
 
     &__menu {
       flex-direction: row;

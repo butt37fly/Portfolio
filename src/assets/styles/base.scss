@@ -180,18 +180,30 @@ li > ul {
   &--alt {
     font-family: 'Special Gothic Expanded One', sans-serif;
   }
+
+  @include respond-to(md) {
+    font-size: var(--font-size-6);
+  }
 }
 
 .subtitle {
   font-family: var(--font-family-primary), sans-serif;
   font-size: var(--font-size-5);
   font-weight: 700;
+
+  @include respond-to(md) {
+    font-size: var(--font-size-4);
+  }
 }
 
 .text {
   font-family: var(--font-family-secondary), sans-serif;
   font-size: var(--font-size-2);
   font-weight: 400;
+
+  @include respond-to(md) {
+    font-size: var(--font-size-1);
+  }
 
   &--b {
     font-weight: 700;

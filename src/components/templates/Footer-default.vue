@@ -38,6 +38,7 @@ const menu = {
   border-top: 1px solid var(--color-white);
   grid-area: 10 / 1 / 11 / 13;
   height: 100%;
+  z-index: 5;
 
   &__wrapper {
     width: min(100%, 1400px);

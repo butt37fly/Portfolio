@@ -7,7 +7,7 @@ const texts = TEXTS.views.about
 </script>
 
 <template>
-  <main class="container about u-flex u-w-100">
+  <main class="container about u-flex u-md-justify-start u-w-100">
     <section class="u-flex u-row u-w-100 u-g-6 u-sm-column">
       <div class="u-flex u-w-50 u-sm-w-100" style="">
         <h1 class="title u-mb-5">{{ texts.title }}</h1>
