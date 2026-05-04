@@ -181,6 +181,15 @@ ul {
   width: 100%;
 }
 
+a,
+button,
+input,
+textarea,
+select,
+[data-clickable] {
+  -webkit-tap-highlight-color: transparent;
+}
+
 p {
   margin-bottom: var(--size-2);
 }
