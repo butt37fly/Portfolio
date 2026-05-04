@@ -22,6 +22,8 @@ $text-align: (
   justify: justify,
 );
 
+$text-transform: (normal, uppercase, lowercase);
+
 $sizes: (
   0: unset,
   1: var(--size-1),

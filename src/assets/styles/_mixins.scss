@@ -79,6 +79,12 @@
     }
   }
 
+  @each $name in $text-transform {
+    .u-#{$prefix}text-#{$name} {
+      text-transform: #{$name};
+    }
+  }
+
   @each $name, $value in $flex-align {
     .u-#{$prefix}justify-#{$name} {
       --justify: #{$value};

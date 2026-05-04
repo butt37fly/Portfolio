@@ -62,7 +62,7 @@ const textStyle = () => {
   </a>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .c-button {
   --accent-color: var(--color-blue-02);
   --background-color: var(--color-background);
@@ -74,11 +74,14 @@ const textStyle = () => {
   color: var(--color-text);
   cursor: pointer;
   filter: drop-shadow(0px 0px 5px transparent);
-  font-family: 'Roboto', sans-serif;
-  font-size: var(--font-size-2);
-  font-weight: 700;
-  text-decoration: none;
   transition: 0.3s;
+  text-decoration: none;
+
+  &__title {
+    font-family: var(--font-family-primary), sans-serif;
+    font-size: var(--font-size-2);
+    font-weight: 700;
+  }
 
   &--active,
   &:hover {
@@ -101,7 +104,7 @@ const textStyle = () => {
   }
 
   &--rev {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
   }
 
   &--tab {

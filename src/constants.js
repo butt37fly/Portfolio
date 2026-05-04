@@ -65,10 +65,10 @@ export const TEXTS = {
   },
   views: {
     home: {
-      title: 'Andrés Ospina',
+      title: 'Hola, soy <b>Andrés Ospina</b>',
       subtitle: 'Desarrollador Web',
       description: `
-        <p>¡Hola! ¿Cómo estás? Bienvenido a mi portafolio web, encuentra aquí mis trabajos más recientes :)</p>
+        <p>Soluciones personalizadas, especialista en <strong>WordPress & Shopify</strong>.</p>
         `,
     },
     projects: {
