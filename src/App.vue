@@ -1,6 +1,7 @@
 <script setup>
 import Header from '@/components/templates/Header-default.vue'
 import Footer from '@/components/templates/Footer-default.vue'
+import CursorDefault from './components/Cursor-default.vue'
 </script>
 
 <template>
@@ -10,10 +11,11 @@ import Footer from '@/components/templates/Footer-default.vue'
       <component :is="Component" />
     </Transition>
   </RouterView>
+  <CursorDefault />
   <Footer></Footer>
 </template>
 
-<style>
+<style lang="scss">
 #app {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -22,6 +24,10 @@ import Footer from '@/components/templates/Footer-default.vue'
   grid-row-gap: 0px;
   width: 100dvw;
   height: 100dvh;
+
+  @include respond-to(md) {
+    grid-template-columns: repeat(12, 1fr);
+  }
 }
 
 .page-slid-enter-active,
@@ -40,11 +46,5 @@ import Footer from '@/components/templates/Footer-default.vue'
 
 .page-slid-leave-to {
   transform: translateX(-60px);
-}
-
-@media (max-width: 1024px) {
-  #app {
-    grid-template-columns: repeat(12, 1fr);
-  }
 }
 </style>

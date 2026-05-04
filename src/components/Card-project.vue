@@ -43,7 +43,7 @@ const props = defineProps({
     </div>
   </article>
 
-  <article v-else class="c-card u-flex u-align-start u-justify-start u-w-100">
+  <article v-else class="c-card u-flex u-align-start u-justify-start u-w-100" data-clickable>
     <div class="c-card__image-wrapper" :style="`background-image: url(${props.image}) ;`">
       <img class="c-card__image u-flex" :src="props.image" :alt="props.title" />
     </div>
