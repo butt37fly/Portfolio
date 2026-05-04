@@ -9,6 +9,6 @@ const props = defineProps({
 </script>
 
 <template>
-  <CustomIcon class="c-button__icon" v-if="props.icon" :name="props.icon" />
+  <CustomIcon class="c-button__icon c-icon--md" v-if="props.icon" :name="props.icon" />
   <span :class="props.textStyle">{{ props.title }}</span>
 </template>
