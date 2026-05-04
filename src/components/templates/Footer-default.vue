@@ -11,19 +11,23 @@ const menu = {
 
 <template>
   <footer class="c-footer u-flex u-p-5 u-md-p-3 u-md-my-3 u-md-mx-auto u-w-100">
-    <section class="c-footer__wrapper u-flex u-row u-align-center u-justify-between">
-      <ul class="c-footer__list u-flex u-row u-justify-start u-g-3 u-sm-hidden">
+    <section class="c-footer__wrapper u-flex u-row u-align-center u-justify-between u-sm-g-4">
+      <ul class="c-footer__list u-flex u-row u-justify-start u-g-3 u-sm-g-1 u-sm-order-2">
         <li v-for="item in menu.left" :key="item.name" class="c-footer__item u-mb-0 u-flex">
           <a :href="item.url" target="_blank" class="c-footer__link u-flex">
             <IconDefault class="c-icon--lg" :name="item.icon" />
           </a>
         </li>
       </ul>
-      <div class="c-footer__container u-flex">
+      <div class="c-footer__container u-flex u-sm-order-1 u-sm-w-100">
         <h2 class="c-footer__text text">{{ PROJECT_INFO.dev }}</h2>
       </div>
-      <ul class="c-footer__list u-flex u-row u-justify-end u-g-6 u-sm-hidden">
-        <li v-for="item in menu.rigth" :key="item.name" class="c-footer__item u-mb-0 u-flex">
+      <ul class="c-footer__list u-flex u-row u-justify-end u-g-6 u-sm-order-3">
+        <li
+          v-for="item in menu.rigth"
+          :key="item.name"
+          class="c-footer__item u-mb-0 u-flex u-sm-hidden"
+        >
           <a :href="item.url" target="_blank" class="c-footer__link u-flex u-row u-g-1">
             <span class="c-footer__text">{{ item.name }}</span>
             <IconDefault name="link" />
@@ -70,6 +74,12 @@ const menu = {
     top: 0;
     width: 96%;
     z-index: 99;
+  }
+
+  @include respond-to(sm) {
+    &__list {
+      flex: unset;
+    }
   }
 }
 </style>
