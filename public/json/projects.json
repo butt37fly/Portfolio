@@ -1,8 +1,8 @@
 [
   {
     "pinned": true,
-    "image": "/portafolio/img/projects/simona-supermercados/destacada.png",
-    "gallery": ["/portafolio/img/projects/simona-supermercados/inicio.png"],
+    "image": "/portafolio/img/projects/simona-supermercados/destacada.webp",
+    "gallery": ["/portafolio/img/projects/simona-supermercados/inicio.webp"],
     "title": "Simona Supermercados",
     "url": "https://simona.com.co/",
     "date": "2026",
@@ -15,11 +15,11 @@
   },
   {
     "pinned": true,
-    "image": "/portafolio/img/projects/agencia-d-puntas/destacada.png",
+    "image": "/portafolio/img/projects/agencia-d-puntas/destacada.webp",
     "gallery": [
-      "/portafolio/img/projects/agencia-d-puntas/inicio.png",
-      "/portafolio/img/projects/agencia-d-puntas/servicios.png",
-      "/portafolio/img/projects/agencia-d-puntas/marcas.png"
+      "/portafolio/img/projects/agencia-d-puntas/inicio.webp",
+      "/portafolio/img/projects/agencia-d-puntas/servicios.webp",
+      "/portafolio/img/projects/agencia-d-puntas/marcas.webp"
     ],
     "title": "Agencia DPuntas",
     "url": "https://agenciadpuntas.com/",
@@ -33,8 +33,8 @@
   },
   {
     "pinned": true,
-    "image": "/portafolio/img/projects/melissa-bravo/destacada.png",
-    "gallery": ["/portafolio/img/projects/melissa-bravo/inicio.png"],
+    "image": "/portafolio/img/projects/melissa-bravo/destacada.webp",
+    "gallery": ["/portafolio/img/projects/melissa-bravo/inicio.webp"],
     "title": "Melissa Bravo",
     "url": "https://melissabravo.com/",
     "date": "2026",
@@ -47,8 +47,8 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/kleent/destacada.png",
-    "gallery": ["/portafolio/img/projects/kleent/inicio.png"],
+    "image": "/portafolio/img/projects/kleent/destacada.webp",
+    "gallery": ["/portafolio/img/projects/kleent/inicio.webp"],
     "title": "Kleent",
     "url": "https://itskleent.com/",
     "date": "2026",
@@ -61,10 +61,10 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/mia-and-glow/destacada.png",
+    "image": "/portafolio/img/projects/mia-and-glow/destacada.webp",
     "gallery": [
-      "/portafolio/img/projects/mia-and-glow/inicio.png",
-      "/portafolio/img/projects/mia-and-glow/categorias.png"
+      "/portafolio/img/projects/mia-and-glow/inicio.webp",
+      "/portafolio/img/projects/mia-and-glow/categorias.webp"
     ],
     "title": "Mia & Glow",
     "url": "https://www.miayglow.com/",
@@ -78,11 +78,11 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/instinto/destacada.png",
+    "image": "/portafolio/img/projects/instinto/destacada.webp",
     "gallery": [
-      "/portafolio/img/projects/instinto/inicio.png",
-      "/portafolio/img/projects/instinto/categorias.png",
-      "/portafolio/img/projects/instinto/proyectos.png"
+      "/portafolio/img/projects/instinto/inicio.webp",
+      "/portafolio/img/projects/instinto/categorias.webp",
+      "/portafolio/img/projects/instinto/proyectos.webp"
     ],
     "title": "Instinto",
     "url": "https://www.instintohome.com/",
@@ -96,10 +96,10 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/grupo-mua/destacada.png",
+    "image": "/portafolio/img/projects/grupo-mua/destacada.webp",
     "gallery": [
-      "/portafolio/img/projects/grupo-mua/inicio.png",
-      "/portafolio/img/projects/grupo-mua/aliados.png"
+      "/portafolio/img/projects/grupo-mua/inicio.webp",
+      "/portafolio/img/projects/grupo-mua/aliados.webp"
     ],
     "title": "Grupo MUA",
     "url": "https://grupomua.com.co/",
@@ -113,10 +113,10 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/miranda-talents/destacada.png",
+    "image": "/portafolio/img/projects/miranda-talents/destacada.webp",
     "gallery": [
-      "/portafolio/img/projects/miranda-talents/inicio.png",
-      "/portafolio/img/projects/miranda-talents/actrices.png"
+      "/portafolio/img/projects/miranda-talents/inicio.webp",
+      "/portafolio/img/projects/miranda-talents/actrices.webp"
     ],
     "title": "Miranda Talents",
     "url": "https://www.mirandatalents.net/",
@@ -130,8 +130,8 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/cadmanmg/destacada.png",
-    "gallery": ["/portafolio/img/projects/cadmanmg/inicio.png"],
+    "image": "/portafolio/img/projects/cadmanmg/destacada.webp",
+    "gallery": ["/portafolio/img/projects/cadmanmg/inicio.webp"],
     "title": "CADMAN MG",
     "url": "https://cadmanmanagementgroup.com/es/inicio/",
     "date": "2023",
@@ -144,8 +144,8 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/masaki/destacada.png",
-    "gallery": ["/portafolio/img/projects/masaki/inicio.png"],
+    "image": "/portafolio/img/projects/masaki/destacada.webp",
+    "gallery": ["/portafolio/img/projects/masaki/inicio.webp"],
     "title": "Masaki",
     "url": "https://www.masakibienestar.pro/",
     "date": "2025",
@@ -158,10 +158,10 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/zafiro-barber/destacada.png",
+    "image": "/portafolio/img/projects/zafiro-barber/destacada.webp",
     "gallery": [
-      "/portafolio/img/projects/zafiro-barber/inicio.png",
-      "/portafolio/img/projects/zafiro-barber/servicios.png"
+      "/portafolio/img/projects/zafiro-barber/inicio.webp",
+      "/portafolio/img/projects/zafiro-barber/servicios.webp"
     ],
     "title": "Zafiro Barber",
     "url": "https://www.zafirobarber.com/",
@@ -176,8 +176,8 @@
 
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/napa-autoglass/destacada.png",
-    "gallery": ["/portafolio/img/projects/napa-autoglass/inicio.png"],
+    "image": "/portafolio/img/projects/napa-autoglass/destacada.webp",
+    "gallery": ["/portafolio/img/projects/napa-autoglass/inicio.webp"],
     "title": "NAPA Auto Glass",
     "url": "https://napautoglass.com/",
     "date": "2024",
@@ -190,8 +190,8 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/drinkcentral/destacada.png",
-    "gallery": ["/portafolio/img/projects/drinkcentral/inicio.png"],
+    "image": "/portafolio/img/projects/drinkcentral/destacada.webp",
+    "gallery": ["/portafolio/img/projects/drinkcentral/inicio.webp"],
     "title": "DrinkCentral",
     "url": "https://drinkcentral.co/",
     "date": "2023",
@@ -204,8 +204,8 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/marca-creativos/destacada.png",
-    "gallery": ["/portafolio/img/projects/marca-creativos/inicio.png"],
+    "image": "/portafolio/img/projects/marca-creativos/destacada.webp",
+    "gallery": ["/portafolio/img/projects/marca-creativos/inicio.webp"],
     "title": "Marca Creativos",
     "url": "https://marcacreativos.com/",
     "date": "2023",
@@ -218,8 +218,8 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/jaisal/destacada.png",
-    "gallery": ["/portafolio/img/projects/jaisal/inicio.png"],
+    "image": "/portafolio/img/projects/jaisal/destacada.webp",
+    "gallery": ["/portafolio/img/projects/jaisal/inicio.webp"],
     "title": "Jaisal",
     "url": "http://jaisal.com.co/",
     "date": "2022",
@@ -232,8 +232,8 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/armonia-musicoterapia/destacada.png",
-    "gallery": ["/portafolio/img/projects/armonia-musicoterapia/inicio.png"],
+    "image": "/portafolio/img/projects/armonia-musicoterapia/destacada.webp",
+    "gallery": ["/portafolio/img/projects/armonia-musicoterapia/inicio.webp"],
     "title": "Armonía Músico-terapia",
     "url": "https://www.armoniamusicoterapia.es/",
     "date": "2025",
@@ -246,10 +246,10 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/rodrigo-aguirre/destacada.png",
+    "image": "/portafolio/img/projects/rodrigo-aguirre/destacada.webp",
     "gallery": [
-      "/portafolio/img/projects/rodrigo-aguirre/inicio.png",
-      "/portafolio/img/projects/rodrigo-aguirre/servicios.png"
+      "/portafolio/img/projects/rodrigo-aguirre/inicio.webp",
+      "/portafolio/img/projects/rodrigo-aguirre/servicios.webp"
     ],
     "title": "Rodrigo Aguirre",
     "url": "https://www.rodrigoaguirredecarcer.net/",
@@ -263,8 +263,8 @@
   },
   {
     "pinned": false,
-    "image": "/portafolio/img/projects/iglesia-casa-de-fe/destacada.png",
-    "gallery": ["/portafolio/img/projects/iglesia-casa-de-fe/inicio.png"],
+    "image": "/portafolio/img/projects/iglesia-casa-de-fe/destacada.webp",
+    "gallery": ["/portafolio/img/projects/iglesia-casa-de-fe/inicio.webp"],
     "title": "Iglesia Casa de Fe",
     "url": "https://iglesiacasadefeonline.com/",
     "date": "2024",

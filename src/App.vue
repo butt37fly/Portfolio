@@ -26,7 +26,7 @@ import Footer from '@/components/templates/Footer-default.vue'
 
 .page-slid-enter-active,
 .page-slid-leave-active {
-  transition: 400ms cubic-bezier(0.8, -0.4, 0.5, 1) all;
+  transition: 400ms ease all;
 }
 
 .page-slid-enter-from,
