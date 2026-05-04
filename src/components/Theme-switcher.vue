@@ -11,6 +11,9 @@ const changeTheme = (newTheme) => {
     themeActive.value = newTheme
     isChanging = true
 
+    // Actualiza en el localstorage el tema elegido
+    localStorage.setItem('userDefaultTheme', newTheme)
+
     setTimeout(() => {
       isChanging = false
     }, 1500)
@@ -18,7 +21,18 @@ const changeTheme = (newTheme) => {
 }
 
 onMounted(() => {
-  themeActive.value = themes.dark
+  let userDefaultTheme = localStorage.getItem('userDefaultTheme')
+
+  if (!userDefaultTheme) {
+    let webDefaultTheme =
+      window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    userDefaultTheme = webDefaultTheme ? themes.dark : themes.light
+
+    // Crea en el localstorage el tema elegido
+    localStorage.setItem('userDefaultTheme', userDefaultTheme)
+  }
+
+  themeActive.value = userDefaultTheme
 })
 
 watch(
