@@ -16,32 +16,55 @@
   height: 100dvh;
   z-index: 1;
   overflow: hidden;
-  backdrop-filter: blur(120px);
-  background-color: rgba(255, 255, 255, 0.01);
+
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    backdrop-filter: blur(200px);
+    background-color: rgba(255, 255, 255, 0.01);
+  }
 
   &__item {
     width: 500px;
     aspect-ratio: 1;
     border-radius: 100%;
-    filter: blur(500px);
     position: absolute;
+    animation-name: bouncing !important;
 
     &--right {
-      background-color: #e718ff;
+      background-color: #5b1463;
       top: 10px;
       left: -50px;
+      animation: 5s infinite ease-in;
     }
 
     &--left {
-      background-color: #081488;
+      background-color: #12294b;
       right: 50px;
       bottom: 50px;
+      animation: 7s infinite ease-in;
     }
   }
 
   @include respond-to(md) {
     &__item {
       width: 250px;
+    }
+  }
+
+  @keyframes bouncing {
+    0% {
+      transform: translateX(0px) scale(1);
+    }
+    50% {
+      transform: translateX(-60px) scale(1.5);
+    }
+    100% {
+      transform: translateX(0px) scale(1);
     }
   }
 }
