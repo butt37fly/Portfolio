@@ -77,6 +77,11 @@ body {
     --color-background: var(--color-white);
     --color-background-translucent: rgba(255, 255, 255, 0.5);
     --color-border: var(--color-black);
+
+    &,
+    & * {
+      scrollbar-color: var(--color-black) transparent;
+    }
   }
 
   &[data-custom-cursor-active='true'] {
@@ -94,13 +99,13 @@ body {
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: var(--color-gray);
+    background-color: var(--color-black);
     border-radius: var(--corner);
-    border: 6px solid var(--color-black);
+    border: 6px solid var(--color-white);
   }
 
   *::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-white);
+    background-color: var(--color-black);
   }
 
   *::-webkit-scrollbar {
