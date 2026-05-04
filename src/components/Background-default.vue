@@ -24,7 +24,7 @@
     left: 0;
     width: 100dvw;
     height: 100dvh;
-    backdrop-filter: blur(60px);
+    backdrop-filter: blur(120px);
     background-color: var(--color-background-translucent);
   }
 
@@ -34,7 +34,7 @@
     border-radius: 100%;
     position: absolute;
     animation-name: bouncing !important;
-    filter: blur(200px);
+    filter: blur(250px);
 
     &--right {
       background-color: #5b1463;

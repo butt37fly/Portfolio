@@ -4,6 +4,7 @@ import IconDefault from './Icon-default.vue'
 
 const themes = { dark: 'dark', light: 'light' }
 const themeActive = ref(themes.dark)
+
 let isChanging = false
 
 const changeTheme = (newTheme) => {
