@@ -1,6 +1,7 @@
 <script setup>
 import IconDefault from '@/components/Icon-default.vue'
 import { PROJECT_INFO, LINKS } from '@/constants'
+import ThemeSwitcher from '../Theme-switcher.vue'
 
 const menu = {
   left: LINKS.rrss,
@@ -21,13 +22,14 @@ const menu = {
       <div class="c-footer__container u-flex">
         <h2 class="c-footer__text text">{{ PROJECT_INFO.dev }}</h2>
       </div>
-      <ul class="c-footer__list u-flex u-row u-justify-end u-g-3 u-sm-hidden">
+      <ul class="c-footer__list u-flex u-row u-justify-end u-g-6 u-sm-hidden">
         <li v-for="item in menu.rigth" :key="item.name" class="c-footer__item u-mb-0 u-flex">
           <a :href="item.url" target="_blank" class="c-footer__link u-flex u-row u-g-1">
             <span class="c-footer__text">{{ item.name }}</span>
             <IconDefault name="link" />
           </a>
         </li>
+        <ThemeSwitcher />
       </ul>
     </section>
   </footer>

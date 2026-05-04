@@ -28,12 +28,6 @@
   --color-blue-02: #326383;
   --color-blue-03: #4c7c9d;
 
-  --color-primary: var(--color-purple-01);
-  --color-secondary: var(--color-wine-01);
-  --color-accent: var(--color-blue-01);
-  --color-text: var(--color-white);
-  --color-background: var(--color-black);
-
   --size-1: 4px;
   --size-2: 8px;
   --size-3: 12px;
@@ -57,9 +51,30 @@
   line-height: 1.2em;
   margin: unset;
   padding: unset;
+  transition:
+    color,
+    background-color 1s;
 
   scrollbar-width: thin;
   scrollbar-color: var(--color-gray) transparent;
+}
+
+body {
+  --color-primary: var(--color-purple-01);
+  --color-secondary: var(--color-wine-01);
+  --color-accent: var(--color-blue-01);
+  --color-text: var(--color-white);
+  --color-background: var(--color-black);
+
+  background-color: var(--color-background);
+
+  &[data-theme='light'] {
+    --color-primary: var(--color-purple-01);
+    --color-secondary: var(--color-wine-01);
+    --color-accent: var(--color-blue-01);
+    --color-text: var(--color-black);
+    --color-background: var(--color-white);
+  }
 }
 
 @supports selector(::-webkit-scrollbar) {
