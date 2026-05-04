@@ -5,18 +5,18 @@ import IconDefault from './Icon-default.vue'
 const themes = { dark: 'dark', light: 'light' }
 const themeActive = ref(themes.dark)
 
-let isChanging = false
+const isChanging = ref(false)
 
 const changeTheme = (newTheme) => {
-  if (!isChanging && themeActive.value !== newTheme) {
+  if (!isChanging.value && themeActive.value !== newTheme) {
     themeActive.value = newTheme
-    isChanging = true
+    isChanging.value = true
 
     // Actualiza en el localstorage el tema elegido
     localStorage.setItem('userDefaultTheme', newTheme)
 
     setTimeout(() => {
-      isChanging = false
+      isChanging.value = false
     }, 1500)
   }
 }

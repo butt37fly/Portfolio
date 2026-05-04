@@ -78,6 +78,13 @@ body {
     --color-background-translucent: rgba(255, 255, 255, 0.5);
     --color-border: var(--color-black);
   }
+
+  &[data-custom-cursor-active='true'] {
+    &,
+    & * {
+      cursor: none !important;
+    }
+  }
 }
 
 @supports selector(::-webkit-scrollbar) {

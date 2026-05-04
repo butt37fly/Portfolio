@@ -1,5 +1,12 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
+
+const props = defineProps({
+  active: {
+    type: Boolean,
+    default: true,
+  },
+})
 
 const cursorPosition = ref({ x: 0, y: 0 })
 const isClickable = ref(false)
@@ -38,6 +45,8 @@ const updateCursorPosition = (event) => {
 }
 
 const handleMouseMove = (event) => {
+  if (!props.active) return
+
   if (!ticking) {
     requestAnimationFrame(() => {
       updateCursorPosition(event)
@@ -52,6 +61,7 @@ const handleMouseLeave = () => {
 }
 
 const handleMouseEnter = () => {
+  if (!props.active) return
   isVisible.value = true
 }
 
@@ -66,6 +76,18 @@ onUnmounted(() => {
   document.removeEventListener('mouseleave', handleMouseLeave)
   document.removeEventListener('mouseenter', handleMouseEnter)
 })
+
+watch(
+  () => props.active,
+  (value) => {
+    if (!value) {
+      isVisible.value = false
+    } else {
+      isVisible.value = true
+    }
+  },
+  { immediate: true },
+)
 </script>
 
 <template>
@@ -78,17 +100,7 @@ onUnmounted(() => {
   </div>
 </template>
 
-<style lang="scss">
-html,
-body,
-* {
-  cursor: none !important;
-
-  @include respond-to(md) {
-    cursor: auto !important;
-  }
-}
-
+<style lang="scss" scoped>
 .c-cursor {
   --size: 32px;
   --scale: 1;

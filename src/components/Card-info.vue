@@ -16,11 +16,11 @@ const props = defineProps({
     <div class="c-card__head u-flex u-w-100 u-justify-start u-align-start u-g-1">
       <h2 class="c-card__title subtitle">{{ props.title }}</h2>
       <div class="c-card__details u-flex u-row u-w-100 u-justify-start u-align-start u-g-2">
-        <div class="c-card__detail u-flex u-row u-g-1">
+        <div class="c-card__detail u-flex u-row u-g-1 u-">
           <IconDefault name="clock" />
           {{ props.date }}
         </div>
-        <div class="c-card__detail u-flex u-row u-g-1">
+        <div class="c-card__detail u-flex u-row u-g-1 u-">
           <IconDefault name="company" />
           {{ props.at }}
         </div>
@@ -39,7 +39,12 @@ const props = defineProps({
   background: var(--color-gray);
   border-radius: var(--corner);
 
+  &__details {
+    flex-wrap: wrap;
+  }
+
   &__detail {
+    flex-wrap: wrap;
     color: var(--color-text);
   }
 }
