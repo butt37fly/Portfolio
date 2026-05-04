@@ -107,7 +107,7 @@ const textStyle = () => {
   }
 
   &--tab {
-    --background-color: var(--color-background);
+    --background-color: var(--color-gray);
     border-radius: 10px 10px 0 0;
     border-width: 1px !important;
     border-bottom-color: var(--background-color);

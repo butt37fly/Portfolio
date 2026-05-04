@@ -70,5 +70,10 @@ onMounted(async () => {
     height: 70dvh;
     overflow: auto;
   }
+
+  & .c-button--active {
+    --accent-color: var(--color-background);
+    border-bottom-color: var(--color-background);
+  }
 }
 </style>
