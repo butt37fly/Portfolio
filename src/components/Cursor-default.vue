@@ -83,6 +83,10 @@ html,
 body,
 * {
   cursor: none !important;
+
+  @include respond-to(md) {
+    cursor: auto !important;
+  }
 }
 
 .c-cursor {
@@ -117,6 +121,10 @@ body,
 
   &--clickable {
     --scale: 1.7;
+  }
+
+  @include respond-to(md) {
+    display: none;
   }
 }
 </style>

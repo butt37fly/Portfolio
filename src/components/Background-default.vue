@@ -38,5 +38,11 @@
       bottom: 50px;
     }
   }
+
+  @include respond-to(md) {
+    &__item {
+      width: 250px;
+    }
+  }
 }
 </style>

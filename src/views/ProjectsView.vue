@@ -66,7 +66,7 @@ onMounted(async () => {
         <div
           class="c-modal__wrapper u-flex u-row u-md-column u-align-center u-justify-center u-g-3"
         >
-          <div class="c-modal__images u-flex u-align-center u-justify-start u-g-3 u-px-3">
+          <div class="c-modal__images u-flex u-align-center u-justify-start u-g-3 u-px-3 u-md-p-3">
             <img
               v-for="item in activeProject.gallery"
               :key="item"
@@ -162,10 +162,6 @@ onMounted(async () => {
   }
 
   @include respond-to(md) {
-    &__wrapper {
-      flex-direction: column-reverse;
-    }
-
     &__images,
     &__content {
       width: 100%;

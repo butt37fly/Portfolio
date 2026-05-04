@@ -31,7 +31,7 @@ import BackgroundDefault from './components/Background-default.vue'
   @include respond-to(md) {
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
   }
 }
 
