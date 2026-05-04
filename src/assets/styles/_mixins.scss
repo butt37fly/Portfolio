@@ -9,6 +9,17 @@
   }
 }
 
+$order: ();
+
+@for $i from 0 through 10 {
+  $order: map.merge(
+    $order,
+    (
+      $i: $i,
+    )
+  );
+}
+
 @mixin generate-responsive-utilities($prefix: '') {
   @each $name, $value in $sizes {
     // Padding
@@ -102,7 +113,17 @@
     }
   }
 
+  @each $name, $value in $order {
+    .u-#{$prefix}order-#{$name} {
+      order: $value;
+    }
+  }
+
   .u-#{$prefix}hidden {
     display: none !important;
+  }
+
+  .u-#{$prefix}visible {
+    display: block !important;
   }
 }
