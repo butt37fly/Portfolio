@@ -41,7 +41,7 @@ export const LINKS = {
     email: {
       name: 'E-mail',
       icon: 'email',
-      url: 'emailto:amospina423@gmail.com',
+      url: 'mailto:amospina423@gmail.com',
     },
   },
   project: {
