@@ -13,6 +13,10 @@ const changeTab = (id) => {
   activeTab.value = id
 }
 
+const getTabClass = (slug) => {
+  return ['tab', activeTab.value === slug ? 'active' : 'inactive']
+}
+
 onMounted(async () => {
   const result = await fetchJson(path)
 
@@ -31,8 +35,8 @@ onMounted(async () => {
         v-for="key in data"
         :key="`${key.title}-button`"
         :title="key.title"
-        :customStyle="['tab', 'inactive']"
-        :datu-align-tab-button="key.slug"
+        :customStyle="getTabClass(key.slug)"
+        :data-align-tab-button="key.slug"
         :onClick="() => changeTab(key.slug)"
       />
     </div>
@@ -41,7 +45,7 @@ onMounted(async () => {
         class="c-tab__content js-tab-content u-flex u-w-100 u-justify-start u-align-start u-g-3"
         v-for="key in data"
         :key="`${key.title}-tab`"
-        :datu-align-tab-content="key.slug"
+        :data-align-tab-content="key.slug"
         v-show="activeTab === key.slug"
       >
         <CardInfo v-for="item in key.content" :key="item.title" v-bind="item" />
@@ -60,8 +64,9 @@ onMounted(async () => {
   }
 
   &__wrapper {
+    background-color: var(--color-background);
     border-radius: 0 6px 6px 18px;
-    border: 1px solid var(--color-white);
+    border: 1px solid var(--color-text);
     height: 70dvh;
     overflow: auto;
   }

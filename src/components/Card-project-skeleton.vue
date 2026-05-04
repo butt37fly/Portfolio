@@ -32,7 +32,7 @@ const getRandomImgHeight = () => {
 <style lang="scss" scoped>
 .c-card-skeleton {
   background-color: var(--color-background);
-  border-radius: 10px;
+  border-radius: var(--corner);
   border: 1px solid var(--color-white);
   overflow: hidden;
   transition: filter 0.3s;

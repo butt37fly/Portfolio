@@ -7,7 +7,7 @@
   </section>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .c-background {
   position: fixed;
   top: 0;
@@ -24,8 +24,8 @@
     left: 0;
     width: 100dvw;
     height: 100dvh;
-    backdrop-filter: blur(200px);
-    background-color: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(60px);
+    background-color: var(--color-background-translucent);
   }
 
   &__item {
@@ -34,6 +34,7 @@
     border-radius: 100%;
     position: absolute;
     animation-name: bouncing !important;
+    filter: blur(200px);
 
     &--right {
       background-color: #5b1463;

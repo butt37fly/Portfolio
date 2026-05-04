@@ -16,17 +16,18 @@
   --font-family-secondary: 'Roboto';
 
   --color-black: #202020;
-  --color-white: #cccccc;
+  --color-white: #eeeeee;
   --color-gray: #4a4a4a;
   --color-purple-01: #603574;
   --color-purple-02: #784e8b;
-  --color-purple-03: #9167a3;
+  --color-purple-03: #e9d5ff;
   --color-wine-01: #762d48;
   --color-wine-02: #934560;
-  --color-wine-03: #b05d79;
+  --color-wine-03: #e9d5ff;
   --color-blue-01: #154c6b;
   --color-blue-02: #326383;
-  --color-blue-03: #4c7c9d;
+  --color-blue-03: #bfdbfe;
+  --color-blue-04: #1f2937;
 
   --size-1: 4px;
   --size-2: 8px;
@@ -51,9 +52,7 @@
   line-height: 1.2em;
   margin: unset;
   padding: unset;
-  transition:
-    color,
-    background-color 1s;
+  transition: color, background-color, border-color, fill, 1s;
 
   scrollbar-width: thin;
   scrollbar-color: var(--color-gray) transparent;
@@ -65,15 +64,20 @@ body {
   --color-accent: var(--color-blue-01);
   --color-text: var(--color-white);
   --color-background: var(--color-black);
+  --color-background-translucent: rgba(255, 255, 255, 0.01);
+  --color-border: var(--color-white);
 
   background-color: var(--color-background);
 
   &[data-theme='light'] {
-    --color-primary: var(--color-purple-01);
-    --color-secondary: var(--color-wine-01);
-    --color-accent: var(--color-blue-01);
-    --color-text: var(--color-black);
+    --color-primary: var(--color-purple-03);
+    --color-secondary: var(--color-wine-03);
+    --color-accent: var(--color-blue-03);
+    --color-text: var(--color-blue-04);
+    --color-gray: #dfdfdf;
     --color-background: var(--color-white);
+    --color-background-translucent: rgba(255, 255, 255, 0.5);
+    --color-border: var(--color-black);
   }
 }
 
@@ -85,7 +89,7 @@ body {
 
   *::-webkit-scrollbar-thumb {
     background-color: var(--color-gray);
-    border-radius: 10px;
+    border-radius: var(--corner);
     border: 6px solid var(--color-black);
   }
 

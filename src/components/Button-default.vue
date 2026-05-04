@@ -63,18 +63,26 @@ const textStyle = () => {
 </template>
 
 <style lang="scss">
+[data-theme='light'] {
+  .c-button {
+    &,
+    &:hover {
+      filter: unset;
+    }
+  }
+}
+
 .c-button {
-  --accent-color: var(--color-blue-02);
-  --background-color: rgba(255, 255, 255, 0.1);
+  --accent-color: var(--color-accent);
+  --background-color: var(--color-background-translucent);
   --text-color: var(--color-text);
 
   background-color: var(--background-color);
   border-radius: var(--corner-button);
-  border: 1px solid var(--color-white);
+  border: 1px solid var(--color-text);
   color: var(--color-text);
   cursor: pointer;
   filter: drop-shadow(0px 0px 5px transparent);
-  transition: 0.3s;
   text-decoration: none;
   backdrop-filter: blur(60px);
 
@@ -91,29 +99,25 @@ const textStyle = () => {
   }
 
   &--alt {
-    --accent-color: var(--color-wine-02);
+    --accent-color: var(--color-secondary);
   }
 
   &--active {
-    --accent-color: var(--color-blue-02);
+    --accent-color: var(--color-accent);
   }
 
-  &--inactive {
-    --accent-color: var(--color-gray);
-    --background-color: var(--color-gray);
-    opacity: 0.8;
+  &--tab {
+    --background-color: var(--color-background);
+    border-radius: 10px 10px 0 0;
+    border-width: 1px !important;
+    border-bottom-color: var(--background-color);
+    overflow: hidden;
+    white-space: nowrap;
+    filter: unset;
   }
 
   &--rev {
     flex-direction: row-reverse !important;
-  }
-
-  &--tab {
-    border-bottom: unset;
-    border-radius: 10px 10px 0 0;
-    border-width: 1px !important;
-    overflow: hidden;
-    white-space: nowrap;
   }
 }
 </style>

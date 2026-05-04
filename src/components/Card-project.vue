@@ -66,13 +66,19 @@ const props = defineProps({
 </template>
 
 <style lang="scss" scoped>
+[data-theme='light'] {
+  .c-card {
+    background-color: var(--color-background-translucent);
+  }
+}
+
 .c-card {
+  backdrop-filter: blur(60px);
   background-color: var(--color-background);
-  border-radius: 10px;
-  border: 1px solid var(--color-white);
+  border-radius: var(--corner);
+  border: 1px solid var(--color-border);
   filter: drop-shadow(0px 0px 5px transparent);
   overflow: hidden;
-  transition: filter 0.3s;
 
   &:not(.c-card--modal) {
     cursor: pointer;
@@ -87,33 +93,33 @@ const props = defineProps({
   }
 
   &__image-wrapper {
-    border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: var(--corner);
     overflow: hidden;
     position: relative;
 
     &::before {
       content: '';
-      width: 100%;
-      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
       display: flex;
+      height: 100%;
+      left: 0;
       position: absolute;
       top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%;
       z-index: 0;
     }
   }
 
   &__image {
-    border-radius: 10px;
+    border-radius: var(--corner);
     height: 100%;
     object-fit: cover;
-    width: 100%;
-    transition: 0.3s;
     position: relative;
+    transition: 0.3s;
+    width: 100%;
     z-index: 1;
   }
 
@@ -149,8 +155,8 @@ const props = defineProps({
 
     & .c-card__details {
       flex-wrap: wrap;
-      justify-content: flex-start;
       gap: var(--size-2);
+      justify-content: flex-start;
     }
   }
 }

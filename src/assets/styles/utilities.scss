@@ -27,7 +27,7 @@
   animation: skeleton 3s infinite linear;
   background: linear-gradient(110deg, #c0c0c0 10%, #a5a5a5 50%, #c0c0c0 90%);
   background-size: 200% 100%;
-  border-radius: 10px;
+  border-radius: var(--corner);
   height: 10px;
   width: 100%;
 }

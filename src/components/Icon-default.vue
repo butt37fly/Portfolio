@@ -42,6 +42,8 @@ onMounted(async () => {
 <style lang="scss" scoped>
 .c-icon {
   --size: 16px;
+  --fill: var(--color-text);
+
   width: var(--size);
   height: var(--size);
   flex: 0 var(--size);
@@ -60,6 +62,10 @@ onMounted(async () => {
     :deep(svg) {
       height: 100%;
       width: 100%;
+    }
+
+    :deep(svg) * {
+      fill: var(--fill);
     }
   }
 }

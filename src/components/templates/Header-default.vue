@@ -26,7 +26,6 @@ import { MENU } from '@/constants'
   grid-area: 1 / 11 / 10 / 13;
   height: 100%;
   min-width: 240px;
-  overflow: hidden !important;
   z-index: 5;
 
   &__menu {
@@ -34,7 +33,7 @@ import { MENU } from '@/constants'
   }
 
   &__line {
-    background-color: var(--color-white);
+    background-color: var(--color-border);
     height: stretch;
     position: absolute;
     width: 1px;

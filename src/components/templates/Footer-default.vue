@@ -37,7 +37,7 @@ const menu = {
 
 <style lang="scss" scoped>
 .c-footer {
-  border-top: 1px solid var(--color-white);
+  border-top: 1px solid var(--color-border);
   grid-area: 10 / 1 / 11 / 13;
   height: 100%;
   z-index: 5;
@@ -54,13 +54,13 @@ const menu = {
 
   &__link {
     text-decoration: underline;
-    text-decoration-color: var(--color-white);
+    text-decoration-color: var(--color-text);
   }
 
   @include respond-to(md) {
     backdrop-filter: blur(60px);
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    border-radius: var(--corner);
     border: 2px solid rgba(255, 255, 255, 0.1);
     grid-area: unset;
     height: auto;

@@ -122,7 +122,7 @@ onMounted(async () => {
 
   &__wrapper {
     background-color: var(--color-gray);
-    border-radius: 10px;
+    border-radius: var(--corner);
     border: 1px solid var(--color-white);
     height: 90%;
     width: min(90%, 1000px);
@@ -169,7 +169,7 @@ onMounted(async () => {
 
     &__content {
       height: auto;
-      border-radius: 10px;
+      border-radius: var(--corner);
     }
 
     &__footer {

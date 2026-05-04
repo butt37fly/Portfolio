@@ -37,7 +37,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 .c-card {
   background: var(--color-gray);
-  border-radius: 10px;
+  border-radius: var(--corner);
 
   &__detail {
     color: var(--color-text);

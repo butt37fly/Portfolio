@@ -25,17 +25,18 @@ $tag-colors: (
 );
 
 .c-tag {
-  --background-color: var(--color-blue-01);
+  --background-color: var(--color-accent);
 
   background-color: var(--background-color);
   border-radius: 100px;
-  border: 1px solid #fff;
-  font-family: 'Roboto', sans-serif;
+  border: 1px solid var(--color-white);
+  font-family: var(--font-family-secondary);
   font-size: var(--font-size-2);
   font-weight: 500;
   padding: var(--size-1) var(--size-3);
   text-align: center;
   width: auto;
+  color: var(--color-white) !important;
 
   @each $variant, $color in $tag-colors {
     &--#{$variant} {
